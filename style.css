@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P';
+}
+
+body{
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper{
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #d3d3d3;
+}
+
+.game-details{
+  color:blue;
+  font-size: 0.75rem;
+  font-weight: 350;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-board{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: repeat(20,1fr) / repeat(20,1fr);
+  background: #4c4949;
+}
+
+.play-board .food{
+  background: blue;
+}
+
+.play-board .head{
+  background: rgb(4, 173, 4);
+}
