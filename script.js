@@ -142,7 +142,6 @@ const initGame = () =>{
   
     timerElement.innerHTML= "Timer:" + Math.floor(currentTime);
     if(currentTime===0){
-      clearInterval(timerId);
       gameOver=true;
     }
     currentTime-=.125;
